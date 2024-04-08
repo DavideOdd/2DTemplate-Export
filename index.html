@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/export.loader.js";
+      var loaderUrl = buildUrl + "/2DTemplate-Export.loader.js";
       var config = {
-        dataUrl: buildUrl + "/export.data",
-        frameworkUrl: buildUrl + "/export.framework.js",
-        codeUrl: buildUrl + "/export.wasm",
+        dataUrl: buildUrl + "/2DTemplate-Export.data",
+        frameworkUrl: buildUrl + "/2DTemplate-Export.framework.js",
+        codeUrl: buildUrl + "/2DTemplate-Export.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "2DTemplate",
@@ -98,7 +98,7 @@
         canvas.style.height = "600px";
       }
 
-     loadingBar.style.display = "block";
+      loadingBar.style.display = "block";
 
       var script = document.createElement("script");
       script.src = loaderUrl;
@@ -117,7 +117,6 @@
 
       document.body.appendChild(script);
 
-      
     </script>
   </body>
 </html>
